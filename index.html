@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de Adivinhação</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="./index.js" defer=""></script>
+    <link rel="stylesheet" href="./index.css">
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Jogo de Adivinhação</h1>
+      <p>O computador escolheu um número entre 1 e 10. Tente adivinhar!</p>
+      <form id="guessForm">
+        <label for="guessInput">Digite seu palpite (entre 1 e 10):</label>
+        <input type="text" id="guessInput" name="guess"><br>
+        <button type="submit">Enviar</button>
+      </form>
+      <p id="message"></p>
+      <button id="reloadButton" class="hidden" onclick="window.location.reload();">Jogar novamente</button>
+    </div>
+
+    <script src="script.js"></script>
+
+  </body>
+
+</html>
